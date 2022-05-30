@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <div class="container_calculator">
+        <div class="container_calculator_title">
+            <h1>Калькулятор чаевых</h1>
+        </div>
+
+        <div class="calculator_money">
+            <div>
+                <label><p class="calculator_money_title title">Сумма по чеку</p>
+                    <input type="number" min="0" class="calculator_money_input">
+                </label>
+            </div>
+            <div>
+                <label>
+                    <p class="title">Качество обслуживания</p>
+                    <select class="quality_service">
+                        <option style="display:none">
+                        <option value="0">Плохо(0%)</option>
+                        <option value="5">Нормально(5%)</option>
+                        <option value="10">Хорошо(10%)</option>
+                        <option value="15">Замечательно(15%)</option>
+                    </select>
+                </label>
+            </div>
+
+
+            <div>
+                <label>
+                    <p class="title">Количество человек</p>
+                    <input type="number" min="0" class="number_people">
+                </label>
+            </div>
+
+            <div class="calculator_button">
+                <button class="calculator_button_count">Посчитать</button>
+                <button class="calculator_button_reset">Сбросить</button>
+            </div>
+        </div>
+        <div>
+            <p>Чаевых:<span class="tips_title title_span">___</span>&#8381; <span
+                    class="title_from_each"> (с каждого)<span></p>
+            <p>Всего:<span class="total_title title_span">___</span>&#8381;</p>
+        </div>
+
+    </div>
+
+</div>
+<script src="style.js"></script>
+</body>
+</html>
